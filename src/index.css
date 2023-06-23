@@ -1,13 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  background-color: rgb(9, 156, 156);
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
+.hero-img {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-image: url(./assets/1beef.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  padding: 28px;
+}
+
+.hero-img a {
+  text-decoration: none;
+  background: rgb(9, 156, 156);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.hero-img button:hover {
+  background-color: brown;
+}
+
+.footer {
+  background-color: rgb(9, 156, 156);
+}
+
+.footer ul {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.486);
+}
+
+.about-banner {
+  background-image: url(./assets/banner.jpg);
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-bottom {
+  max-width: 500px;
+}
+
+.menu {
+  background-color: rgb(119, 193, 193);
+}
+
+.menu .card {
+  background-color: rgb(218, 192, 23);
+  border: none;
+  transition: all 0.3s;
+}
+
+.menu .card:hover {
+  transform: scale(1.05);
+  position: relative;
+  z-index: 1000;
+}
+
+.menu .card-img-top {
+  height: 12rem;
+  object-fit: cover;
+}
+
+.contact .contact-left {
+  background-image: url(./assets/2blackbean.jpg);
+  background-size: cover;
+  background-position: center;
 }
